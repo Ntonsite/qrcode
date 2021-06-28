@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('qr-code-g', function () {
-    \QrCode::size(500)->format('png')->generate('ItSolutionStuff.com', public_path('images/qrcode.png'));
+    \QrCode::size(500)->format('png')->generate('tony', public_path('images/qrcode.png'));
   return view('qrCode');
 });
